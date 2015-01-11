@@ -3,7 +3,7 @@
 import sys
 from pyspark import SparkContext
     
-logFile = "hdfs://ec2-54-173-109-80.compute-1.amazonaws.com:9000/rita"
+logFile = "hdfs://ec2-<ec2-IP>:9000/<folder where dataset is located>"
 sc = SparkContext("local", "simple app")
 logData = sc.textFile(logFile).cache()
 
