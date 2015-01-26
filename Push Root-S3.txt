@@ -1,0 +1,17 @@
+#Push a file from root directory (root@ip$) to Amazon S3 Bucket
+
+#In root directory, create a directory:
+root@ip$ /root/ephemeral-hdfs/bin/hadoop/ fs -mkdir /text
+root@ip$ ls /home
+
+#Push file from root@ip$ to Amazon:
+root@ip$ /root/ephemeral-hdfs/bin/hadoop fs -put /home/<file-name> hdfs://<master-DNS>:9000/<dest-folder>
+
+#Confirm file transfer:
+root@ip$ /root/ephemeral-hdfs/bin/hadoop fs -ls /home/<file-name> hdfs://<master-DNS>:9000/<dest-folder>
+
+#Run Spark in Scala/Python:
+root@ip$ /root/spark/bin/spark-shell or /root/spark/bin/pyspark
+
+#Run wordcount on file (example where wordcount.py was pushed to EC2):
+spark/bin/spark-submit spark/examples/src/main/python/wordcount.py /home/<file-name>.py
