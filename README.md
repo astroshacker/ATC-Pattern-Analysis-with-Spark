@@ -3,4 +3,11 @@ This project uses Apache Spark to analyze a government database from Air Traffic
 
 By the end of this project, I hope to deduce patterns that answer the following:
 
+Type  | Trial #|	Prompt|	                                                                                |Response Type|
+Query |3	     |Tabulate Negative Delays, display MapReduce computing time|	                              |Array / Sum (int)
+Query	|3	     |Tabulate Positive Delays, display MapReduce computing time|	                              |Array / Sum (int)
+Query	|3	     |Display airport-centric delays in a list, display MapReduce computing time                |Tuples (int)
+Query	|3	     |Average airport delays for each airport into one integer, display MapReduce computing time|Integer
+Query	|3	     |Display name of airport with worst weather forecast, display MapReduce computing time     |String
+
 
