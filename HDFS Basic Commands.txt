@@ -1,0 +1,17 @@
+#Remove a file:
+rm <file_path>
+(from hdfs): root@ip~]$ /root/ephemeral-hdfs/bin/hadoop fs -rm hdfs://<master-DNS>:9000/text/count_sjc.py
+Warning: $HADOOP_HOME is deprecated.
+
+Deleted hdfs://<master-DNS>:9000/text/count_sjc.py
+
+#Exit:
+exit or exit()
+
+#Editing Python file in the terminal:
+edit: a
+esc
+:wq
+
+#Remove file from HDFS:
+/root/ephemeral-hdfs/bin/hadoop fs -rmr hdfs://ec2-54-173-109-80.compute-1.amazonaws.com:9000/text/pipe-delimited.txt
