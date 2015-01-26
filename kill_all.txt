@@ -1,0 +1,32 @@
+#Occasionally Spark freezes (internet disconnection, server issues).
+#Code in Spark will not run if processes are not killed correctly.
+#The following procedure kills all Spark processes and restarts it from the shell.
+#Note you must be in root@ip, not user@user (in the terminal).
+
+#Path to ephemeral-hdfs, use stop-all.sh:
+/root/ephemeral-hdfs/bin/stop-all.sh
+
+#Path to spark, use stop-all.sh:
+/root/spark/sbin/stop-all.sh
+
+ps aux | grep spark #check processes
+killall spark-shell
+kill -9 java
+killall java 
+aux | grep spark #check processes
+
+#Path to spark, use start-all.sh:
+/root/spark/sbin/start-all.sh
+
+#Path to ephemeral-hdfs, use start-all.sh:
+/root/ephemeral-hdfs/bin/start-all.sh
+
+ps aux | grep spark #check processes
+
+#Initialize Pyspark
+/root/spark/bin/pyspark
+
+#or Scala Spark
+/root/spark/bin/spark-shell
+
+
