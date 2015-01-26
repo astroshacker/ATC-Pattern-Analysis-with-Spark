@@ -1,9 +1,0 @@
-#Push a file from from local directory (user@user$) to EC2 directory (root@ip$)
-
-#In local directory:
-cd <file-folder>
-scp <file-name> root@<ec2-master-DNS>:/<folder>/<new-file-name>
-
-#In root@ip$ directory, check for file:
-ls /<folder>
-ls
