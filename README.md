@@ -3,8 +3,9 @@ This project uses Apache Spark to analyze a government database from Air Traffic
 
 By the end of this project, I hope to complete the following patterns:
 
-1. Query, 3 trials, Tabulate Negative Delays, display MapReduce computing time, Array / Sum (int)
-2. Query, 3 trials, Tabulate Positive Delays, display MapReduce computing time, Array / Sum (int)
-3. Query, 3 trials, Display airport-centric delays in a list, display MapReduce computing time, Tuples (int)
+1. Query| 3 trials, |Tabulate Negative Delays,| display MapReduce computing time, |Array / Sum (int)
+2. Query| 3 trials, |Tabulate Positive Delays, display MapReduce computing time,  |Array / Sum (int)
+3. Query| 3 trials, |Display airport-centric delays in a list, display MapReduce c|omputing time, Tuples (int)
+4. 
 4. Query, 3 trials, Average airport delays for each airport into one integer, display MapReduce computing time, Integer
 5. Query, 3 trials, Display name of airport with worst weather forecast, display MapReduce computing time, String
